@@ -25,25 +25,25 @@
     .container {
       max-width: 980px; margin: 48px auto; padding: 0 20px;
     }
-    header h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 40px); letter-spacing: .02em; }
+    header h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 42px); letter-spacing: .02em; }
     header p { margin: 4px 0; color: var(--muted); }
-    .card { background: var(--card); border-radius: 16px; box-shadow: var(--shadow); padding: 20px; margin: 20px 0; }
-    .rules { font-size: 15px; }
+    .card { background: var(--card); border-radius: 16px; box-shadow: var(--shadow); padding: 16px; margin: 16px 0; }
+    .rules { font-size: 16px; }
     .rules strong { color: var(--fg); }
 
     /* 區塊標題與得分 */
-    .section { margin-top: 28px; }
-    .section-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+    .section { margin-top: 22px; }
+    .section-header { display: flex; align-items: baseline; gap: 8px; margin-bottom: 8px; }
     .section-title { font-size: 20px; font-weight: 700; }
-    .section-cap { color: var(--muted); font-size: 14px; }
+    .section-cap { color: var(--muted); font-size: 16px; }
 
     /* 題目 */
-    .q { padding: 14px 16px; border-radius: 14px; border: 1px solid #e2e8f0; background: #fff; margin: 14px 0; }
+    .q { padding: 14px 16px; border-radius: 14px; border: 1px solid #e2e8f0; background: #fff; margin: 12px 0; }
     .q legend { font-weight: 600; padding: 0 4px; }
     .q .desc { font-size: 14px; color: var(--muted); margin-top: 2px; }
 
     /* 漸層橫幅 */
-    .bar { height: 14px; border-radius: 10px; margin: 10px 0 10px; position: relative; overflow: hidden; border: 1px solid #e2e8f0; }
+    .bar { height: 14px; border-radius: 10px; margin: 8px 0 8px; position: relative; overflow: hidden; border: 1px solid #e2e8f0; }
     .bar::before {
       content: ""; position: absolute; inset: 0;
       background: linear-gradient(to right, var(--green), var(--yellow), var(--red));
@@ -51,11 +51,11 @@
 
     /* 0-4 單選按鈕列 */
     .scale { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; align-items: center; }
-    .scale label { display: grid; grid-template-columns: 20px 1fr; align-items: center; gap: 6px; padding: 8px; border-radius: 10px; border: 1px solid #e2e8f0; cursor: pointer; user-select: none; }
+    .scale label { display: grid; grid-template-columns: 20px 1fr; align-items: center; gap: 6px; padding: 6px; border-radius: 10px; border: 1px solid #e2e8f0; cursor: pointer; user-select: none; }
     .scale input { appearance: none; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #cbd5e1; display: inline-block; position: relative; }
     .scale input:checked { border-color: var(--accent); }
     .scale input:checked::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; background: var(--accent); }
-    .scale .lbl { font-size: 13px; color: var(--muted); }
+    .scale .lbl { font-size: 14px; color: var(--muted); }
     .scale .lbl b { color: var(--fg); font-weight: 700; }
 
     /* 統計與工具列 */
@@ -104,7 +104,7 @@
     <section class="card">
       <h2 style="margin:0 0 8px">量表目的與作答說明</h2>
       <div class="rules">
-        <p>本量表用於評估<strong>膝關節或髖關節骨關節炎</strong>的症狀與功能狀況，適合用來追蹤治療效果或病情變化。</p>
+        <p>本量表用於評估<strong>膝關節骨關節炎</strong>的症狀與功能狀況，適合用來追蹤治療效果或病情變化。</p>
         <p>請依<strong>最近48小時</strong>自身的真實感受作答。每題以<strong>0–4 分</strong>表示嚴重程度：<strong>0</strong>＝沒有、<strong>1</strong>＝輕微、<strong>2</strong>＝中等、<strong>3</strong>＝嚴重、<strong>4</strong>＝非常嚴重。</p>
       </div>
       <div class="toolbar">
