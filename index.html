@@ -23,7 +23,7 @@
       line-height: 1.6;
     }
     .container {
-      max-width: 980px; margin: 36px auto; padding: 0 24px;
+      max-width: 980px; margin: 36px auto; padding: 0 8px;
     }
     header h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 42px); letter-spacing: .02em; }
     header p { margin: 4px 0; color: var(--muted); }
@@ -33,12 +33,12 @@
 
     /* 區塊標題與得分 */
     .section { margin-top: 20px; }
-    .section-header { display: flex; align-items: baseline; gap: 8px; margin-bottom: 8px; }
+    .section-header { display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px; }
     .section-title { font-size: 20px; font-weight: 700; }
-    .section-cap { color: var(--muted); font-size: 16px; }
+    .section-cap { color: var(--muted); font-size: 15px; }
 
     /* 題目 */
-    .q { padding: 12px 12px; border-radius: 14px; border: 1px solid #e2e8f0; background: #fff; margin: 12px 0; }
+    .q { padding: 12px 12px; border-radius: 14px; border: 1px solid #e2e8f0; background: #fff; margin: 20px 0; }
     .q legend { font-weight: 600; padding: 6px 4px; }
     .q .desc { font-size: 16px; color: var(--muted); margin-top: 2px; }
 
@@ -55,13 +55,13 @@
     .scale input { appearance: none; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #cbd5e1; display: inline-block; position: relative; }
     .scale input:checked { border-color: var(--accent); }
     .scale input:checked::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; background: var(--accent); }
-    .scale .lbl { font-size: 14px; color: var(--muted); }
+    .scale .lbl { font-size: 15px; color: var(--muted); }
     .scale .lbl b { color: var(--fg); font-weight: 700; }
 
     /* 統計與工具列 */
     .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
     .stat { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px; }
-    .stat h4 { margin: 0 0 6px; font-size: 14px; color: var(--muted); }
+    .stat h4 { margin: 0 0 6px; font-size: 15px; color: var(--muted); }
     .stat .val { font-size: 20px; font-weight: 800; }
     .overall {
       margin-top: 8px; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;
